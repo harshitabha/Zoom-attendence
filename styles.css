@@ -1,1 +1,43 @@
+body {
+    padding: 5px;
+}
+#navBar {
+    background-color: #2bb88b;
+    width: 100%;
+    height: 75px;
+    vertical-align: middle;
+    padding: 0;
+    overflow: hidden;
+}
+
+#navBarButtons {
+    list-style-type: none;
+}
+
+#home {
+    float: left;
+    font-family: 'Paytone One', sans-serif;
+    margin-bottom: 1em;
+}
+
+.navButton {
+    /* Over all format */
+    display: inline;
+    float: right;
+    display: block;
+
+    /* Alignment and size */
+    text-align: center;
+    text-decoration: none;
+    margin-right: 1em;
+    padding: 20 px;
+    font-size: 1.5em;
+
+    /* Style */
+    color: white;
+}
+
+.navButton:hover {
+    color: #789496;
+}
 
