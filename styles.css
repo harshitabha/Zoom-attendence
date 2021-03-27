@@ -1,23 +1,19 @@
 body {
     padding: 5px;
 }
-#navBar {
-    background-color: #2bb88b;
-    width: 100%;
-    height: 75px;
-    vertical-align: middle;
-    padding: 0;
-    overflow: hidden;
-}
 
+/*************************NAVIGATION BAR*************************/
 #navBarButtons {
     list-style-type: none;
-}
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}  
 
 #home {
     float: left;
     font-family: 'Paytone One', sans-serif;
-    margin-bottom: 1em;
 }
 
 .navButton {
@@ -35,9 +31,21 @@ body {
 
     /* Style */
     color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
 }
 
+/* Change the link color to #111 (black) on hover */
 .navButton:hover {
-    color: #789496;
+    background-color: #111;
 }
 
+li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
