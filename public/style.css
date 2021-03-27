@@ -1,7 +1,6 @@
 body {
-    padding: 5px;
+    float: center;
 }
-
 /*************************NAVIGATION BAR*************************/
 #navBarButtons {
     list-style-type: none;
