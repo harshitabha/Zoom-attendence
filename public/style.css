@@ -203,13 +203,11 @@ li a{
 #master {
     padding-left: 10px;
     padding-bottom: 10px;
-    height: 20px;
 }
 .picker {
     border-radius: 15px;
     transform: translate(0, -50px);
     width: auto;
-    height: 1em;
     font-size: 16px;
     outline: none;
 }
