@@ -1,4 +1,3 @@
-
 //openning and closing sign in page
 openSignIn = function() {
     closeCreateAccount();
