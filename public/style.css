@@ -138,17 +138,18 @@ li a{
 /*Username and password labels*/
 .signInLables {
     float: left; 
-    padding-left: 4.5em; 
+    padding-left: 1em; 
     font-family: 'Oswald', sans-serif; 
-    font-size: 1.5em;
+    font-size: 1em;
+    height: 15px;
 }
 
 .entryFields {
     height: 30px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 12px black;
+    border: 10px;
     margin: 10px;
     font-family: 'Oswald', sans-serif;
+    width: 90%;
 }
 
 /*Both Sign in and create account*/
@@ -211,8 +212,8 @@ li a{
     background-color: #fefefe;
     padding: 20px;
     border: 1px solid #888;
-    height: 80%;
-    width: 25%;
+    height: 70%;
+    width: 30%;
     margin: 5% auto 5% auto;
 }
 
@@ -235,8 +236,8 @@ li a{
     font-weight: bold;
 }
   
-  .closeOut:hover,
-  .closeOut:focus {
+.closeOut:hover,
+.closeOut:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
