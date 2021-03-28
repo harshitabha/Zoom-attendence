@@ -50,57 +50,79 @@
         </style>
     </head>
 
-    <body>
+    <body id='attendance-page'>
         <script src="script.js"></script>
 
         <!--Creating the navigation bar at the top-->
-        <ul id="navBarButtons">
-            <li class="navButton" id="home"> <a href = "index.html">Zoom Attendence</a></li>
-            <li class="navButton"> <a href = "#" onclick="openSignIn()">Sign In</a></li>
-            <li class="navButton" id  ='start'> <a href = "attendance.html">Get Started</a></li>
-        </ul>
+      <ul id="navBarButtons">
+        <li class="navButton" id="home"> <a href = "index.html">Zoom Attendance</a></li>
+        <li class="navButton"> <a href = "#" onclick='openSignIn()'>Sign In</a></li>
+        <li class="navButton" id  ='start'> <a href = "attendance.html">Get Started</a></li>
+      </ul>
+
+        <br>
+        <br>
+        <div>
+            <form action='JavaScript:takeAttendance()'>
+                <div class = 'file-chooser' onclick="chooseMaster()">
+                    <label for="masterList">Master List</label><br>
+                    <input class='picker' id='master' type="file" name="masterList" accept=".txt, .doc, .docx"/>
+                </div>
+
+                <div class = 'file-chooser' onclick="choosePart()">
+                    <label for="partList">Participant List</label><br>
+                    <input class='picker' id='participant' type="file" name="partList" accept=".jpg, .jpeg, .png" multiple />
+                </div>
+                <!--Spacer-->
+                <div style="height: 8em;"></div>
+                <input type="submit" value="Check Attendance" id="attendance">
+            </form>
+        </div>
+
+        <!--Spacer-->
+        <div style="height: 5em;"></div>
 
         <!--Sign in form-->
-    <div id="login" class="modal">
-        <div class="modalContent">
-          <span onclick="closeSignIn()" class="closeOut">&times;</span>
-          <div class="formTitle">
-            <h1>Sign in Here!</h1>
-          </div>
-  
-          <div class="form">
-            <label for="email">Email</label>
-            <div class="email">
-              <input type="text" placeholder="Email of Username">
+        <div id="login" class="modal">
+            <div class="modalContent">
+            <span onclick="closeSignIn()" class="closeOut">&times;</span>
+            <div class="formTitle">
+                <h1>Sign in Here!</h1>
             </div>
-  
-            <label for="password">Password</label>
-            <div class="password">
-              <input type="text" placeholder="Password">
-            </div>
-          </div> 
-  
-          <div>
-            <button class="signIn" type="button">Sign in</button>
-          </div>
-  
-          <div class="signInOptions">
-            <div class="rememberMe">
-              <label for="rememberMe">Keep me signed in</label>
-              <input id="rememberMe" type="checkbox">
-            </div>
-  
+    
+            <div class="form">
+                <label for="email">Email</label>
+                <div class="email">
+                <input type="text" placeholder="Email of Username">
+                </div>
+    
+                <label for="password">Password</label>
+                <div class="password">
+                <input type="text" placeholder="Password">
+                </div>
+            </div> 
+    
             <div>
-              <a href="blank">Forgot Password</a>  
+                <button class="signIn" type="button">Sign in</button>
             </div>
-          </div>
-  
-          <div class="createAccount">
-            <label for="">Don't have an account?</label>
-            <button id="createAccount" type="button">Create an Account</button>
-          </div>
-          
-      </div>
+    
+            <div class="signInOptions">
+                <div class="rememberMe">
+                <label for="rememberMe">Keep me signed in</label>
+                <input id="rememberMe" type="checkbox">
+                </div>
+    
+                <div>
+                <a href="blank">Forgot Password</a>  
+                </div>
+            </div>
+    
+            <div class="createAccount">
+                <label for="">Don't have an account?</label>
+                <button id="createAccount" type="button">Create an Account</button>
+            </div>
+            
+        </div>
   
   
       </div>
@@ -147,7 +169,7 @@
         </div>
       </div>
       
-      <p id="load">Firebase SDK Loading&hellip;</p>
+      <p id="load"">Firebase SDK Loading&hellip;</p>
   
       <script>
         document.addEventListener('DOMContentLoaded', function() {
