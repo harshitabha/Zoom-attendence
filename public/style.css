@@ -3,6 +3,7 @@ body {
     text-align: center;
     margin: 0;
     font-family: 'Oswald', sans-serif;
+    background-color: rgb(233, 232, 232);
 }
 /*************************NAVIGATION BAR*************************/
 #navBarButtons {
@@ -106,4 +107,23 @@ li a{
     width: 15em;
     font-size: 25px;
     font-family: 'Oswald', sans-serif;
+}
+
+/*************************FILE CHOOSER*************************/
+#chooser {
+    margin: 20px;
+    justify-content: center;
+    padding: 15em 0;
+    display: inline;
+    width: 100%;
+}
+
+#participant-button {
+    width: 50%;
+    background-color: rgba(90, 109, 112, 0.295);
+    border-radius: 20px;
+    font-family:'Oswald', sans-serif;
+    font-size: 5em;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
