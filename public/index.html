@@ -57,7 +57,6 @@
         -->
         
         <button id="signIn" onclick=openSignIn()> Sign In </button>
-
       </ul>
 
       
@@ -121,6 +120,49 @@
       <p>Please tell me this worked</p>
       <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Click here for a surprise ;)</a>
     </div>
+
+    <!--Sign in form-->
+    <div id="login" class="modal">
+      <div class="modalContent">
+        <span onclick="closeSignIn()" class="closeOut">&times;</span>
+        <div class="formTitle">
+          <h1>Sign in Here!</h1>
+        </div>
+
+        <div class="form">
+          <label for="email">Email</label>
+          <div class="email">
+            <input type="text" placeholder="Email of Username">
+          </div>
+
+          <label for="password">Password</label>
+          <div class="password">
+            <input type="text" placeholder="Password">
+          </div>
+        </div> 
+
+        <div>
+          <button class="signIn" type="button">Sign in</button>
+        </div>
+
+        <div class="signInOptions">
+          <div class="rememberMe">
+            <label for="rememberMe">Keep me signed in</label>
+            <input id="rememberMe" type="checkbox">
+          </div>
+
+          <div>
+            <a href="blank">Forgot Password</a>  
+          </div>
+        </div>
+
+        <div class="createAccount">
+          <label for="">Don't have an account?</label>
+          <button id="createAccount" type="button">Create an Account</button>
+        </div>
+      </div>
+    </div>
+    
     <p id="load">Firebase SDK Loading&hellip;</p>
 
     <script>

@@ -9,5 +9,3 @@ closeSignIn = function() {
 }
 
 //Come back and try to get modal window close if there's time
-
-
