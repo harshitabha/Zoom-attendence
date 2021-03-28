@@ -1,5 +1,8 @@
 body {
-    padding: 5px;
+    float: center;
+    text-align: center;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
 }
 
 /*************************NAVIGATION BAR*************************/
