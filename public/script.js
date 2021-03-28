@@ -20,13 +20,6 @@ function choosePart()
     document.getElementById("participant").click();
 }
 
-function takeAttendance() {
-    /*
-    const fs = require("fs");
-    const master = document.get
-    fs.readFile()
-    console.log("hello world");*/
-}
 //Come back and try to get modal window close if there's time
 
 //openning and closing Create Account page
@@ -38,6 +31,29 @@ openCreateAccount = function() {
 closeCreateAccount = function() {
     document.getElementById("createAccountForm").style.display="none";
 }
+
+var openFile = function(event) {
+    var input = event.target;
+
+    var reader = new FileReader();
+    reader.onload = function(){
+      var text = reader.result;
+      var node = document.getElementById('output');
+      node.innerText = text;
+      console.log(reader.result.substring(0, 200));
+    };
+    reader.readAsText(input.files[0]);
+  };
+
+/*
+function takeAttendance() {
+    
+    const fs = require("fs");
+    const master = document.get
+    fs.readFile()
+    console.log("hello world");
+}
+*/
 
 
 
