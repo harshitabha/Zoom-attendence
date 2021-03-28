@@ -8,4 +8,21 @@ closeSignIn = function() {
     document.getElementById("login").style.display="none";
 }
 
-//Come back and try to get modal window close if there's time
+//picking master and participant files
+const master = document.getElementById("master");
+
+chooseMaster = function() {
+    document.getElementById("master").click();
+}
+
+function choosePart() 
+{
+    document.getElementById("participant").click();
+}
+
+function takeAttendance() {
+    const fs = require("fs");
+    const master = document.get
+    fs.readFile()
+    console.log("hello world");
+}
