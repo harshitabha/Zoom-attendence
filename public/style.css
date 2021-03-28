@@ -40,6 +40,9 @@ body {
 }
 
 /* Change the link color to #111 (black) on hover */
+#start:hover {
+    background-color: #3CB371;
+}
 .navButton:hover {
     background-color: #111;
 }
