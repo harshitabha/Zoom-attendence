@@ -148,8 +148,11 @@
           <button class="signIn" type="button" onclick="login()">Sign in</button>
         </div>
 
-        <!--Spacer-->
-        <div class='spacer'></div>
+        <div class="signInOptions">
+          <div class="rememberMe">
+            <label for="rememberMe">Keep me signed in</label>
+            <input id="rememberMe" type="checkbox">
+        </div>
 
           <div>
             <a href="blank">Forgot Password</a>  
@@ -157,7 +160,7 @@
         </div>
 
         <div class="createAccount">
-          <label for="">Don't have an account?</label>
+          <label for="createAccount">Don't have an account?</label>
           <button id="createAccount" type="button" onclick="openCreateAccount()">Create an Account</button>
         </div>
       </div>

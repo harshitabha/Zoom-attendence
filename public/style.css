@@ -119,6 +119,20 @@ li a{
 }
 /*************************Sign-in Form*************************/
 
+/* Sign In Button */
+#signIn {
+    position: absolute;
+    top: 24px;
+    right: 16px;
+    transition-duration: 0.4s;
+    border-radius: 8px;
+    padding: 12px 28px;
+}
+
+#signIn:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
 
 /* The Modal (background) */
 .modal {
@@ -140,8 +154,9 @@ li a{
     background-color: #fefefe;
     padding: 20px;
     border: 1px solid #888;
-    height:80%;
-    width: 40%;
+    height: 60%;
+    width: 25%;
+    margin: 5% auto 5% auto;
 }
 
 
@@ -197,13 +212,11 @@ li a{
 #master {
     padding-left: 10px;
     padding-bottom: 10px;
-    height: 20px;
 }
 .picker {
     border-radius: 15px;
     transform: translate(0, -50px);
     width: auto;
-    height: 1em;
     font-size: 16px;
     outline: none;
 }
