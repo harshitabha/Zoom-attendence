@@ -32,28 +32,55 @@ closeCreateAccount = function() {
     document.getElementById("createAccountForm").style.display="none";
 }
 
+//reading the file
+var masterStr = "";
 var openFile = function(event) {
-    var input = event.target;
-
+    var input = event.target; 
+    
     var reader = new FileReader();
     reader.onload = function(){
       var text = reader.result;
       var node = document.getElementById('output');
-      node.innerText = text;
-      console.log(reader.result.substring(0, 200));
+      masterStr = reader.result.substring(0);
+      //console.log(masterStr);
     };
-    reader.readAsText(input.files[0]);
-  };
 
-/*
+    reader.readAsText(input.files[0]);
+};
+
+
 function takeAttendance() {
-    
-    const fs = require("fs");
-    const master = document.get
-    fs.readFile()
-    console.log("hello world");
+    console.log("inside take attendance");
+    //convertt the master list to an array
+    var index = masterStr.indexOf("\n"); //contains the index of the next line escape char
+    var oldIndex = 0;
+    var masterList = new Array();
+
+    //the index of the array
+    var arr = 0;
+
+    var c = 0;
+    console.log(masterStr);
+    //repeat until the index is > than the string length or less than 0
+    while(true)
+    {
+        masterList[arr] = masterStr.substring(oldIndex, index);
+        
+        console.log("Count: " + c + "\nIndex of line break: " + index + "\nstring added: " + masterStr.substring(oldIndex, index));
+
+        arr++;
+        oldIndex = index;
+        index = masterStr.indexOf("\n", index + 1);
+        if(index < 0)
+        {
+            masterList[arr] = masterStr.substring(oldIndex);
+            break;
+        }
+        c++
+    }
+
+    console.log(masterList);
 }
-*/
 
 
 
