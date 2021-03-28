@@ -109,6 +109,13 @@ li a{
     width: 15em;
     font-size: 50px;
     font-family: 'Oswald', sans-serif;
+
+    transition: all .2s ease-in-out;
+}
+
+#getStarted:hover {
+    transform: scale(1.1); 
+    cursor: pointer;
 }
 /*************************Sign-in Form*************************/
 
@@ -176,6 +183,8 @@ li a{
     width: 40%;
 
     font-family: 'Oswald', sans-serif;
+
+    transition: all .2s ease-in-out;
 }
 
 .file-chooser:hover {
