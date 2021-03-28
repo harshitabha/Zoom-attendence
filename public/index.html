@@ -129,38 +129,38 @@
       <div class="modalContent">
         <span onclick="closeSignIn()" class="closeOut">&times;</span>
         <div class="formTitle">
-          <h1>Sign in Here!</h1>
+          <h1 class="signInTitle">Sign in</h1>
         </div>
 
         <div class="form">
-          <label for="email">Email</label>
+          <label for="email" class="signInLables">Email</label><div style="height: 40px;"></div>
           <div class="email">
-            <input id="emailField" type="text" placeholder="Email of Username" required>
+            <input id="emailField" class = "entryFields" type="text" placeholder="Email of Username" required> 
           </div>
 
-          <label for="password">Password</label>
+          <label for="password" class="signInLables">Password</label> <div style="height: 40px;"></div>
           <div class="password">
-            <input id="passwordField" type="password" placeholder="Password" required>
+            <input id="passwordField" class = "entryFields" type="password" placeholder="Password" required> 
           </div>
         </div> 
 
         <div>
-          <button class="signIn" type="button" onclick="login()">Sign in</button>
+          <button class="signIn" type="button" onclick="login()">Sign in</button> <div style="height: 10px;"></div>
         </div>
 
         <div class="signInOptions">
           <div class="rememberMe">
-            <label for="rememberMe">Keep me signed in</label>
-            <input id="rememberMe" type="checkbox">
+            <label for="rememberMe">Keep Me Signed In</label> 
+            <input id="rememberMe" type="checkbox"> <div style="height: 10px;"></div>
         </div>
 
           <div>
-            <a href="blank">Forgot Password</a>  
+            <a href="blank" style="font-family: 'Oswald', sans-serif;">Forgot Password</a> <div style="height: 5px;"></div>
           </div>
         </div>
 
-        <div class="createAccount">
-          <label for="createAccount">Don't have an account?</label>
+        <div class="createAccount" style="padding: 10px;">
+          <label for="createAccount" style="font-family: 'Oswald', sans-serif;">Don't Have An Account?</label>
           <button id="createAccount" type="button" onclick="openCreateAccount()">Create an Account</button>
         </div>
       </div>
@@ -171,28 +171,28 @@
       <div class="modalContent">
         <span onclick="closeCreateAccount()" class="closeOut">&times;</span>
         <div class="formTitle">
-          <h1>Create New Account</h1>
+          <h1 class="signInTitle">Create New Account</h1>
         </div>
 
         <div class="form">
-          <label for="email">Email or Username</label>
+          <label for="email" class="signInLables" id="userNew">Email or Username</label>
           <div class="email">
-            <input id="createEmailField" type="text" placeholder="Email of Username" required>
+            <input class="entryFields" id="createEmailField" type="text" placeholder="Email or Username" required>
           </div>
 
-          <label for="password">Create Password (8 characters minimum)</label>
+          <label for="password" class="signInLables" id="passNew">Password</label> <div style="height: 40px;"></div>
           <div class="password">
-            <input id="createPasswordField" type="password" placeholder="Create Password" required>
+            <input class="entryFields" id="createPasswordField" type="password" placeholder="Create Password (8 characters minimum)" required>
           </div>
 
-          <label for="password">Confirm Password</label>
+          <label for="password" class="signInLables">Confirm Password</label> <div style="height: 40px;"></div>
           <div class="password">
-            <input id="confirmCreatePasswordField" type="password" placeholder="Confirm Password" required>
+            <input class="entryFields" id="confirmCreatePasswordField" type="password" placeholder="Confirm Password" required>
           </div>
         </div> 
 
         <div>
-          <button class="signIn" type="button" onclick="newUser()">Create Account</button>
+          <button class="signIn" type="button" onclick="newUser()">Create Account</button> <div style="height: 10px;"></div>
         </div>
 
         <div class="signInOptions">
@@ -202,8 +202,8 @@
           </div>
 
           <div>
-            <p>Already have an account?</p>
-            <a href="#" onclick="openSignIn()">Sign In</a>  
+            <p style="font-family: 'Oswald', sans-serif;">Already have an account? <a href="#" onclick="openSignIn()">Sign In</a></p>
+              
           </div>
         </div>
       </div>
