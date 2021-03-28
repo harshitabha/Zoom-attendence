@@ -109,22 +109,62 @@ li a{
     width: 15em;
     font-size: 50px;
     font-family: 'Oswald', sans-serif;
+
+    transition: all .2s ease-in-out;
+}
+
+#getStarted:hover {
+    transform: scale(1.1); 
+    cursor: pointer;
 }
 /*************************Sign-in Form*************************/
-
-/* Sign In Button */
-#signIn {
-    position: absolute;
-    top: 24px;
-    right: 16px;
-    transition-duration: 0.4s;
-    border-radius: 8px;
-    padding: 12px 28px;
+.logIn {
+    font-family: 'Oswald', sans-serif;
+}
+.signInTitle {
+    text-align: center;
+    color: rgba(80, 207, 224, 0.753);
+    font-family: 'Chango', cursive;
+    font-size: 2.5em;
 }
 
-#signIn:hover {
-    background-color: #4CAF50; /* Green */
-    color: white;
+/*Username and password labels*/
+.signInLables {
+    float: left; 
+    padding-left: 4.5em; 
+    font-family: 'Oswald', sans-serif; 
+    font-size: 1.5em;
+}
+
+.entryFields {
+    height: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px black;
+    margin: 10px;
+}
+
+/*Both Sign in and create account*/
+.signIn {
+    background-color: #49d689;
+    color: black;
+    border-radius: 1em;
+    border: none;
+
+    height: 2em;
+    width: 7em;
+    font-size: 1em;
+    font-family: 'Oswald', sans-serif;
+
+    transition: all .2s ease-in-out;
+}
+.signIn:hover {
+    box-shadow: 2px 2px 12px black;
+    background-color: #3CB371;
+}
+
+.rememberMe {
+    font-family: 'Oswald', sans-serif;
+    
 }
 
 /* The Modal (background) */
@@ -140,14 +180,30 @@ li a{
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-  
+
+#createAccount {
+    background-color: rgba(80, 207, 224, 0.753);
+    border-radius: 7px;
+    border: none;
+    padding: 5px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+
+    transition: all .2s ease-in-out;
+}
+
+#createAccount:hover {
+    box-shadow: 2px 2px 12px black;
+    background-color: rgba(60, 180, 196, 0.856);;
+}
+
   /* Modal Content/Box */
 .modalContent {
     
     background-color: #fefefe;
     padding: 20px;
     border: 1px solid #888;
-    height: 60%;
+    height: 80%;
     width: 25%;
     margin: 5% auto 5% auto;
 }
@@ -178,6 +234,7 @@ li a{
     cursor: pointer;
 }
 
+
 /*************************FILE CHOOSER*************************/
 .file-chooser {
     display: inline-block;
@@ -191,6 +248,8 @@ li a{
     width: 40%;
 
     font-family: 'Oswald', sans-serif;
+
+    transition: all .2s ease-in-out;
 }
 
 .file-chooser:hover {

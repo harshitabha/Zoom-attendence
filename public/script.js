@@ -21,10 +21,11 @@ function choosePart()
 }
 
 function takeAttendance() {
+    /*
     const fs = require("fs");
     const master = document.get
     fs.readFile()
-    console.log("hello world");
+    console.log("hello world");*/
 }
 //Come back and try to get modal window close if there's time
 
