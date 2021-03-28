@@ -34,7 +34,7 @@ closeCreateAccount = function() {
 
 //reading the file
 var masterStr = "";
-var openFile = function(event) {
+var openFileM = function(event) {
     var input = event.target; 
     
     var reader = new FileReader();
@@ -43,6 +43,20 @@ var openFile = function(event) {
       var node = document.getElementById('output');
       masterStr = reader.result.substring(0);
       //console.log(masterStr);
+    };
+
+    reader.readAsText(input.files[0]);
+};
+
+var partStr = "";
+var openFileP = function(event) {
+    var input = event.target; 
+    
+    var reader = new FileReader();
+    reader.onload = function(){
+      var text = reader.result;
+      var node = document.getElementById('output');
+      partStr = reader.result.substring(0);
     };
 
     reader.readAsText(input.files[0]);
@@ -74,7 +88,60 @@ function takeAttendance() {
         }
     }
 
+    //convertt the participant list to an array
+    var iPart = partStr.indexOf("\n"); //contains the index of the next line escape char
+    var oldIP = 0;
+    var partList = new Array();
+
+    //the index of the array
+    var partIndex = 0;
+
+    //repeat until the index is > than the string length or less than 0
+    while(true)
+    {
+        partList[partIndex] = partStr.substring(oldIP, iPart);
+
+        partIndex++;
+        oldIP = iPart;
+        iPart = partList.indexOf("\n", iPart + 1);
+        if(iPart < 0)
+        {
+            masterList[partIndex] = partStr.substring(oldIP);
+            break;
+        }
+    }
+
+    //comparing the lists
+    var missing = new Array();
+    var missingIndex = 0;
+    for(var m = 0; m < masterList.length; m++)
+    {
+        //if the current element from the master list is not in the participant 
+        //list add it to the missing people list
+        if(!partList.includes(masterList[m]))
+        {
+            missing[missingIndex] = masterList[m];
+            missingIndex++;
+        }
+    }
+
+    console.log("Now add the missing children");
+    //add the missing info on to the website
+    document.getElementById("missing").style.display="block";
     
+
+    for(var i = 0; i < missing.length; i++)
+    {
+        var ul = document.getElementById("missingPeople");
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode(missing[i]));
+        ul.appendChild(li);
+
+        /*var element = document.getElementById("div1");
+        element.appendChild(para);*/
+    }
+
+
 }
 
 

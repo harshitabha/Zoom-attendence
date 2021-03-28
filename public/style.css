@@ -311,3 +311,29 @@ li a{
     transform: scale(1.1); 
     cursor: pointer;
 }
+
+#missing {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#hr {
+    height: 10px;
+    background-color: black;
+    margin-top: 70px;
+}
+
+#missingHead {
+    font-size: 4em;
+    color: rgba(80, 207, 224, 0.753);
+    font-family: 'Chango', cursive;
+    margin-bottom: 20px;
+    
+}
+#missingPeople {
+    float: left;
+    margin-left: 1em;
+    transform: translate(0px, -20px);
+    font-size: 3em;
+}
