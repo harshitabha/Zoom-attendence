@@ -58,7 +58,7 @@ li a{
 /****************************INTRO FIRST DIV******************/
 #info {
     margin-top: 10px;
-    background-image: url("./images/background-intro.jpg");
+    background-image: url("./assets/images/background-intro.jpg");
     background-size: cover;
     background-repeat:no-repeat;
     height: 30em;
