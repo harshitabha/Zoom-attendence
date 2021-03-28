@@ -38,6 +38,9 @@ body {
 }
 
 /* Change the link color to #111 (black) on hover */
+#start:hover {
+    background-color: #3CB371;
+}
 .navButton:hover {
     background-color: #111;
 }
@@ -53,7 +56,7 @@ li a{
 /****************************INTRO FIRST DIV******************/
 #info {
     margin-top: 10px;
-    background-image: url("./images/overhead_comp_pic_COPY.jpg");
+    background-image: url("./assets/images/background-intro.jpg");
     background-size: cover;
     background-repeat:no-repeat;
     height: 30em;

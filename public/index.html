@@ -50,13 +50,8 @@
       <!--Creating the navigation bar at the top-->
       <ul id="navBarButtons">
         <li class="navButton" id="home"> <a href = "index.html">Zoom Attendence</a></li>
-        
-        <!--
-        <li class="navButton"> <a href = "signIn.html">Sign In</a></li>
-        <li class="navButton"><a href = "logIn.html">Log In</a></li>
-        -->
-        
-        <button id="signIn" onclick=openSignIn()> Sign In </button>
+        <li class="navButton"> <a href = "#" onclick="openSignIn()">Sign In</a></li>
+        <li class="navButton" id  ='start'> <a href = "attendance.html">Get Started</a></li>
       </ul>
 
       
@@ -162,6 +157,94 @@
         </div>
       </div>
     </div>
+
+    
+    <!--Sign in form-->
+    <div id="login" class="modal">
+      <div class="modalContent">
+        <span onclick="closeSignIn()" class="closeOut">&times;</span>
+        <div class="formTitle">
+          <h1>Sign in Here!</h1>
+        </div>
+
+        <div class="form">
+          <label for="email">Email</label>
+          <div class="email">
+            <input type="text" placeholder="Email of Username">
+          </div>
+
+          <label for="password">Password</label>
+          <div class="password">
+            <input type="text" placeholder="Password">
+          </div>
+        </div> 
+
+        <div>
+          <button class="signIn" type="button">Sign in</button>
+        </div>
+
+        <div class="signInOptions">
+          <div class="rememberMe">
+            <label for="rememberMe">Keep me signed in</label>
+            <input id="rememberMe" type="checkbox">
+          </div>
+
+          <div>
+            <a href="blank">Forgot Password</a>  
+          </div>
+        </div>
+
+        <div class="createAccount">
+          <label for="">Don't have an account?</label>
+          <button id="createAccount" type="button">Create an Account</button>
+        </div>
+        
+    </div>
+
+
+    </div>
+
+    <!--Sign in form-->
+    <div id="login" class="modal">
+      <div class="modalContent">
+        <span onclick="closeSignIn()" class="closeOut">&times;</span>
+        <div class="formTitle">
+          <h1>Sign in Here!</h1>
+        </div>
+
+        <div class="form">
+          <label for="email">Email</label>
+          <div class="email">
+            <input type="text" placeholder="Email of Username">
+          </div>
+
+          <label for="password">Password</label>
+          <div class="password">
+            <input type="text" placeholder="Password">
+          </div>
+        </div> 
+
+        <div>
+          <button class="signIn" type="button">Sign in</button>
+        </div>
+
+        <div class="signInOptions">
+          <div class="rememberMe">
+            <label for="rememberMe">Keep me signed in</label>
+            <input id="rememberMe" type="checkbox">
+          </div>
+
+          <div>
+            <a href="blank">Forgot Password</a>  
+          </div>
+        </div>
+
+        <div class="createAccount">
+          <label for="">Don't have an account?</label>
+          <button id="createAccount" type="button">Create an Account</button>
+        </div>
+      </div>
+    </div>
     
     <p id="load">Firebase SDK Loading&hellip;</p>
 
@@ -203,5 +286,6 @@
         }
       });
     </script>
+
   </body>
 </html>
