@@ -1,5 +1,9 @@
 body {
-    padding: 5px;
+    float: center;
+    text-align: center;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(233, 232, 232);
 }
 
 /*************************NAVIGATION BAR*************************/
@@ -106,70 +110,21 @@ li a{
     font-family: 'Oswald', sans-serif;
 }
 
-/*************************Sign-in Form*************************/
-/* Sign In Button */
-#signIn {
-    position: absolute;
-    top: 24px;
-    right: 16px;
-    transition-duration: 0.4s;
-    border-radius: 8px;
-    padding: 12px 28px;
+/*************************FILE CHOOSER*************************/
+#chooser {
+    margin: 20px;
+    justify-content: center;
+    padding: 15em 0;
+    display: inline;
+    width: 100%;
 }
 
-#signIn:hover {
-    background-color: #4CAF50; /* Green */
-    color: white;
+#participant-button {
+    width: 50%;
+    background-color: rgba(90, 109, 112, 0.295);
+    border-radius: 20px;
+    font-family:'Oswald', sans-serif;
+    font-size: 5em;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-
-
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content/Box */
-.modalContent {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    height:80%;
-    width: 40%;
-  }
-
-
-.formTitle {
-    text-align: center;
-}
-
-.form {
-    padding: 10px 20px 10px 5px;
-    width:100%;
-}
-
-
-  /* The Close Button */
-.closeOut {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .closeOut:hover,
-  .closeOut:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }

@@ -50,7 +50,7 @@
         </style>
     </head>
 
-    <body>
+    <body id='attendance-page'>
         <script src="script.js"></script>
 
         <!--Creating the navigation bar at the top-->
@@ -60,47 +60,62 @@
             <li class="navButton" id  ='start'> <a href = "attendance.html">Get Started</a></li>
         </ul>
 
+        <br>
+        <br>
+        <div id='chooser'>
+            <div class = 'file-chooser'>
+                <input type="file" id='master' hidden='hidden'/>
+                <button type="button" id='master-button'>Choose a Text File</button>
+                <span id='master-file'> Please choose a file</span>
+            </div>
+            <div class = 'file-chooser'>
+                <input type="file" id='participant' hidden='hidden' multiple />
+                <button type="button" id='participant-button'>Participant List</button>
+                <span id='participant-file'> Please choose a file</span>
+            </div>
+        </div>
+
         <!--Sign in form-->
-    <div id="login" class="modal">
-        <div class="modalContent">
-          <span onclick="closeSignIn()" class="closeOut">&times;</span>
-          <div class="formTitle">
-            <h1>Sign in Here!</h1>
-          </div>
-  
-          <div class="form">
-            <label for="email">Email</label>
-            <div class="email">
-              <input type="text" placeholder="Email of Username">
+        <div id="login" class="modal">
+            <div class="modalContent">
+            <span onclick="closeSignIn()" class="closeOut">&times;</span>
+            <div class="formTitle">
+                <h1>Sign in Here!</h1>
             </div>
-  
-            <label for="password">Password</label>
-            <div class="password">
-              <input type="text" placeholder="Password">
-            </div>
-          </div> 
-  
-          <div>
-            <button class="signIn" type="button">Sign in</button>
-          </div>
-  
-          <div class="signInOptions">
-            <div class="rememberMe">
-              <label for="rememberMe">Keep me signed in</label>
-              <input id="rememberMe" type="checkbox">
-            </div>
-  
+    
+            <div class="form">
+                <label for="email">Email</label>
+                <div class="email">
+                <input type="text" placeholder="Email of Username">
+                </div>
+    
+                <label for="password">Password</label>
+                <div class="password">
+                <input type="text" placeholder="Password">
+                </div>
+            </div> 
+    
             <div>
-              <a href="blank">Forgot Password</a>  
+                <button class="signIn" type="button">Sign in</button>
             </div>
-          </div>
-  
-          <div class="createAccount">
-            <label for="">Don't have an account?</label>
-            <button id="createAccount" type="button">Create an Account</button>
-          </div>
-          
-      </div>
+    
+            <div class="signInOptions">
+                <div class="rememberMe">
+                <label for="rememberMe">Keep me signed in</label>
+                <input id="rememberMe" type="checkbox">
+                </div>
+    
+                <div>
+                <a href="blank">Forgot Password</a>  
+                </div>
+            </div>
+    
+            <div class="createAccount">
+                <label for="">Don't have an account?</label>
+                <button id="createAccount" type="button">Create an Account</button>
+            </div>
+            
+        </div>
   
   
       </div>
