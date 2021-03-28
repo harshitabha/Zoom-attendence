@@ -21,11 +21,20 @@ function choosePart()
 }
 
 function takeAttendance() {
-    const fs = require("fs");
+    const masterFile = document.querySelector('master');
+    document.querySelector('master').addEventListener('change', (event) => {
+        console.log("inside change event");
+        const masterL = document.querySelector('master').file;
+        console.log(masterL);
+    });
+    
+    /*const fs = require("fs");
     const master = document.get
     fs.readFile()
-    console.log("hello world");
+    console.log("hello world");*/
+    console.log("done");
 }
+
 //Come back and try to get modal window close if there's time
 
 //openning and closing Create Account page
