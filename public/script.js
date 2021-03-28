@@ -59,14 +59,10 @@ function takeAttendance() {
     //the index of the array
     var arr = 0;
 
-    var c = 0;
-    console.log(masterStr);
     //repeat until the index is > than the string length or less than 0
     while(true)
     {
         masterList[arr] = masterStr.substring(oldIndex, index);
-        
-        console.log("Count: " + c + "\nIndex of line break: " + index + "\nstring added: " + masterStr.substring(oldIndex, index));
 
         arr++;
         oldIndex = index;
@@ -76,10 +72,9 @@ function takeAttendance() {
             masterList[arr] = masterStr.substring(oldIndex);
             break;
         }
-        c++
     }
 
-    console.log(masterList);
+    
 }
 
 
